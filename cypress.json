@@ -1,1 +1,8 @@
-{}
+{
+  "baseUrl": "https://www.google.es",
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "test-results/test-output-[hash].xml"
+  }
+}

@@ -13,7 +13,7 @@
     "test:debug:local": "CYPRESS_ENV=localhost npm run test:debug",
     "test:debug:prod": "CYPRESS_ENV=production npm run test:debug",
     "test:debug": "cypress run --headed --browser chrome --env TAGS='@e2e-test' --spec 'cypress/integration/**/*.feature'",
-    "test:pull-features": "git submodule update --remote gherkin-features && cp -rf gherkin-features/**/*.feature cypress/integration && node ./scripts/remove-old-features.js"
+    "test:pull-features": "git submodule update --remote gherkin-features && cp -rf gherkin-features/* cypress/integration && node ./scripts/remove-old-features.js"
   },
   "author": "",
   "license": "Private",
