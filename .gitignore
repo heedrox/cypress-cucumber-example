@@ -1,0 +1,7 @@
+cypress/videos
+node_modules/
+npm-debug.log
+.idea/
+cypress/screenshots
+test-results/
+
