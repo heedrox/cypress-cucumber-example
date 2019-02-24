@@ -1,0 +1,40 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '3'))
+  }
+
+  environment {
+    NODE_VERSION = 'v8.12.0'
+  }
+
+  stages {
+    stage('Checkout') {
+      steps {
+        checkout scm
+      }
+    }
+    stage('Get dependencies') {
+      steps {
+        nvm(env.NODE_VERSION) {
+          sh 'npm install'
+        }
+      }
+    }
+    stage('Execute') {
+      steps {
+        nvm(env.NODE_VERSION) {
+          sh 'npm run test:prod'
+        }
+      }
+    }
+  }
+
+  post {
+    always {
+      junit keepLongStdio: true, testResults: 'test-results/*.xml', allowEmptyResults: true
+      archiveArtifacts artifacts: 'cypress/videos/**/*.mp4', onlyIfSuccessful: false
+    }
+  }
+}
