@@ -8,7 +8,6 @@ const FEEL_LUCKY_TEXT = 'suerte';
 
 class GoogleSearchPage {
   static visit() {
-    cy.clearLocalStorage();
     cy.visit('/');
   }
 
