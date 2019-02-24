@@ -1,3 +1,4 @@
 {
-  "baseUrl": "https://www.google.es"
+  "baseUrl": "https://www.google.es",
+  "e2eDatabaseJobApi": "https://some-server-localhost.com/e2e-api/"
 }

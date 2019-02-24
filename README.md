@@ -10,7 +10,13 @@
 Submodules where added as 
 ```git submodule add git@github.com:jmarti-theinit/cypress-cucumber-examples-features.git gherkin-features```
 
-Use your own repo.
+Use your own repo doing:
+
+```git submodule deinit gherkin-features
+git submodule add (YOUR_REPO_URL) gherkin-features
+git add --all
+git commit -m "Change repo url"
+```
 
 ## Warning
 
