@@ -4,7 +4,7 @@ const pluginExecuteCommand = command =>
 // eslint-disable-next-line no-unused-vars
   new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(`${command} execution simulated after 10 secs`);
+      resolve(`${command} execution simulated after 5 secs`);
     }, 5000);
   });
 
