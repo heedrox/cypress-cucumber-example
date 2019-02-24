@@ -1,4 +1,5 @@
 Feature: Feel Lucky
+  @e2e-test
   Scenario: Feel Lucky
     Given I'm at Google
     When I type search word 'github'

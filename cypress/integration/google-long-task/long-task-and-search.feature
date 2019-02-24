@@ -1,4 +1,5 @@
 Feature: Search Google with a Long Task before
+  @e2e-test
   Scenario: Common search
     Given I'm at Google
     And I execute a long task in my database
