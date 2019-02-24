@@ -1,4 +1,4 @@
-Feature: Search Google
+Feature: Search Google with a Long Task before
   Scenario: Common search
     Given I'm at Google
     And I execute a long task in my database
