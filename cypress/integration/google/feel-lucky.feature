@@ -1,6 +1,6 @@
-Feature: Search Google
-  Scenario: Common search
+Feature: Feel Lucky
+  Scenario: Feel Lucky
     Given I'm at Google
     When I type search word 'github'
-    And Press 'Search'
+    And Press 'Feel Lucky'
     Then I have some results
