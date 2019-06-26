@@ -3,16 +3,19 @@
 ## Installing
 
 - Clone repo
-- Do ```git submodule init```
-- Do ```git submodule update```
+- Do `git submodule init`
+- Do `git submodule update`
 - npm install
  
 Submodules where added as 
-```git submodule add git@github.com:jmarti-theinit/cypress-cucumber-examples-features.git gherkin-features```
+```sh
+git submodule add git@github.com:jmarti-theinit/cypress-cucumber-examples-features.git gherkin-features
+```
 
 Use your own repo doing:
 
-```git submodule deinit gherkin-features
+```sh
+git submodule deinit gherkin-features
 git submodule add (YOUR_REPO_URL) gherkin-features
 git add --all
 git commit -m "Change repo url"
